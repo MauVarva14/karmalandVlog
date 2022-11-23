@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> KarmalandVnew</title>
+        <script src="https://kit.fontawesome.com/496964794a.js" crossorigin="anonymous"></script>
+        <script defer src="JS/index.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="grid-container">
+        <header class="header">
+            <nav class="nav">
+              <img class="baner" src="img/baner.png" alt="" height="80px">
+              <button class="home" aria-label="Open menu">
+                  <i class="fa-solid fa-house"></i>
+              </button>
+                <button class="toggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="karmaland.html" class="nav-menu-link nav-link"> ¿Qué es?  </a>
+                    </li >
+                    <li class="nav-menu-item">
+                        <a href="fundadores.html" class="nav-menu-link nav-link"> Fundadores </a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="antecedentes.html" class="nav-menu-link nav-link"> Antecedentes </a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="participantes.html" class="nav-menu-link nav-link"> Miembros </a>
+                    </li>
+                    <li class="nav-menu-item">
+                      <a href="slide.html" class="nav-menu-link nav-link"> Arte </a>
+                  </li>
+                </ul>
+            </nav>
+        </header>
+    <div class="title">GALERIA Y FANARTS</div>
+    
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/slide1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/slide2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/slide3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/slide4.jpg" style="width:100%">
+      </div>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+        <main class="grid-container">
+          <div class="title">
+            <h1>Recientemente</h1>
+          </div>
+          <p class="contenido">
+            Tras la abducción de Staxx este dio a luz a Titanicus, tambien llamado titi, alienigena con apariencia de arbusto que causo mucha controversia entre los fans.<br><br>
+            Titi es caracterizado por sus constantes bromas dado que dentro del rol el es practicamente un niño, al principio esto genero disgusto entre los miembros de karmaland sin embargo
+            con el paso del tiempo se gano el cariño del Fandom.
+            Actualmente vive en casa de su tio Rubius, y ha convivido mucho mas con el que con su propio padre, por esta razon se han vuelto muy unidos.<br><br>
+            La casi nula interacción de Titanicus con su progenitor llevo a que se realizara un evento el pasado 3 de septiembre en el cual se desarrollaria
+            un juicio para determinar la custodia del infante del pueblo.
+          </p>
+          <div class="videito"><video controls width="80%"><source src="img/titanicus.mp4"></video></div>
+          <br>
+          <div class="Script">
+            <button class="titi" type="button" onclick="mostrarspoiler()">Mostrar spoiler</button>
+              <div id="spoiler">
+                <br><video controls width="80%"><source src="img/titi esta muerto.mp4"></video><br>
+                  <table style="background-color: black; opacity: 0.7;padding:15px;">
+                    <tr>
+                      <td>Posterior al juicio una extraña ente atormento Karmaland, nuestros heroes lucharon pero lo unico que los saalvo fue el acto de valentia
+                      del pequeño titi que se sacrifico por el pueblo y sus amigos <br>
+                      Tras su muerte, Rubius quedo trastornado y presento conductas de esquizofrenia por lo que sus compañeros trataron de brindarle ayuda, pero  no consiguieron resultados.<br>Eventualmente aparecio un
+                       personaje llamado Sapo Peta un chaman que prometia ayudar a revivir a titi.</td>
+
+                      <td><div class="subtitle">Resumiendo</div> Se nos murio alexby y titi, sin embargo alexby revivio como mensajero de los dioses y titi fue rescatado del cielo durante el evento de dia de muertos del pasado 31 de Octubre</td>
+                    </tr>
+                  </table>
+
+                  <button class="titi" type="button" onclick="ocultarspoiler()">Ocultar</button>
+                </div>
+              <script type="text/javascript">
+                function mostrarspoiler (){
+                  document.getElementById('spoiler').style.display= 'block';
+                }
+                function ocultarspoiler (){
+                  document.getElementById('spoiler').style.display= 'none';}
+                </script>
+              </div>
+        </main>
+    </body>
+</html>
